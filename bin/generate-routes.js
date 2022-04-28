@@ -59,7 +59,7 @@ function generateRoutes(folder, routes, prefix = '') {
 
 async function main() {
     await generateRoutes(folder, routes)
-    fs.writeFileSync('routes.generate.js', `const routes = ${JSON.stringify(routes)}`)
+    fs.writeFileSync('routes.config.generate.js', `const routes = ${JSON.stringify(routes)}`)
 }
 
 main()
